@@ -1,152 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso Red Team - RedScan Academy</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #1a1a1a;
-      color: #ff3333;
-      text-align: center;
-      padding: 2rem;
-      border-bottom: 2px solid #ff3333;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      text-transform: uppercase;
-    }
-    nav {
-      background: #111;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #ff3333;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem;
-      border-bottom: 1px solid #333;
-    }
-    h2 {
-      color: #ff3333;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .conteudo-programatico ul {
-      list-style: none;
-      padding: 0;
-    }
-    .conteudo-programatico li {
-      background: #1a1a1a;
-      margin: 0.5rem 0;
-      padding: 0.8rem;
-      border-left: 4px solid #ff3333;
-    }
-    footer {
-      background: #1a1a1a;
-      color: #aaa;
-      text-align: center;
-      padding: 1.5rem;
-      border-top: 2px solid #ff3333;
-    }
-    .btn {
-      display: inline-block;
-      background: #ff3333;
-      color: #fff;
-      padding: 0.8rem 1.2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    .btn:hover {
-      background: #cc0000;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso Red Team - RedScan Academy</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0a0a0a;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #111111);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    letter-spacing: 3px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+section {
+    padding: 60px 10%;
+    border-bottom: 1px solid #222;
+}
+
+section h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff0000;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff0000;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #000;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
+
 <body>
-  <header>
+
+<header>
     <h1>RedScan Academy</h1>
-    <p>Curso de Red Team - 12ª Turma / 2026</p>
-  </header>
+    <h2>0ff3ns!v3 S3cur!ty - Curso Completo de Red Team</h2>
+</header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#publico">Público-Alvo</a>
-    <a href="#instrutores">Instrutores</a>
-    <a href="#conteudo">Conteúdo</a>
-    <a href="#jornada">Jornada</a>
-    <a href="#investimento">Investimento</a>
-    <a href="#contato">Contato</a>
-  </nav>
+<section>
+<h2>Sobre a RedScan Academy</h2>
+<p>A RedScan Academy é referência em capacitação prática em cibersegurança ofensiva, oferecendo treinamentos completos em Pentest, Hacking Ético e Operações de Red Team.</p>
 
-  <section id="sobre">
-    <h2>Sobre a RedScan Academy</h2>
-    <p>A RedScan Academy é referência em capacitação prática em cibersegurança ofensiva, oferecendo treinamentos completos em Pentest, Hacking Ético e Operações de Red Team. Já impactamos mais de 235 alunos em 11 turmas, incluindo atuação internacional e ações sociais com bolsas gratuitas.</p>
-  </section>
+<p>Em apenas dois anos:</p>
+<ul>
+<li>235 alunos impactados</li>
+<li>11 turmas formadas</li>
+<li>Mais de 10 alunos atuando fora do Brasil</li>
+<li>Mais de 50 bolsas 100% gratuitas</li>
+</ul>
+</section>
 
-  <section id="publico">
-    <h2>Público-Alvo</h2>
-    <p>O curso é voltado para analistas de segurança, pentesters, engenheiros de TI, líderes de segurança e estudantes que desejam desenvolver competências práticas em testes de intrusão avançados.</p>
-  </section>
+<section>
+<h2>Por que escolher o Curso Red Team?</h2>
+<ul>
+<li>Laboratórios práticos com cenários reais</li>
+<li>Domínio das principais ferramentas de segurança</li>
+<li>Desenvolvimento do mindset ofensivo</li>
+<li>Preparação para relatórios profissionais de Pentest</li>
+</ul>
+</section>
 
-  <section id="instrutores">
-    <h2>Instrutores</h2>
-    <p><strong>Carlos Tuma</strong> – Especialista em Red Team e Pentest, com mais de 20 anos de experiência e 36 CVEs reportadas.</p>
-    <p><strong>Smith Braz</strong> – Militar da Marinha, Tech Lead em Red Team, com experiência em operações de defesa cibernética em grandes eventos e certificações internacionais.</p>
-  </section>
+<section>
+<h2>Público-Alvo</h2>
+<ul>
+<li>Analistas de segurança e Pentesters</li>
+<li>Engenheiros de segurança</li>
+<li>Líderes e gestores de segurança</li>
+<li>Estudantes de cibersegurança</li>
+</ul>
 
-  <section id="conteudo" class="conteudo-programatico">
-    <h2>Conteúdo Programático</h2>
-    <ul>
-      <li>Aula 01 – Introdução ao Red Team, Virtualização, Ética e Networking</li>
-      <li>Aula 02 – Docker e Containers vulneráveis</li>
-      <li>Aula 03 – RFC 9110, Logs e Nuclei Scan</li>
-      <li>Aula 07 – Metasploit Framework e Exploração de Serviços</li>
-      <li>Aula 09 – Ataques a Senhas e Autenticação</li>
-      <li>Aula 12 – OWASP Top 10, XSS, SQL Injection</li>
-      <li>Aula 14 – Escalação de Privilégio em Linux</li>
-      <li>Aula 17 – Active Directory e Vulnerabilidades</li>
-      <li>Aula 20 – Engenharia Social e Phishing</li>
-      <li>Aula 25 – CTF RedScan da Turma</li>
-    </ul>
-  </section>
+<p><span class="highlight">Conhecimento básico sugerido:</span></p>
+<ul>
+<li>Redes de Computadores</li>
+<li>Terminal Linux</li>
+<li>Fundamentos de Cybersecurity</li>
+</ul>
+</section>
 
-  <section id="jornada">
-    <h2>Sobre a Jornada</h2>
-    <p>Plataforma exclusiva com acesso imediato a aulas gravadas, PDFs, máquinas virtuais (.OVA) e grupo privado no WhatsApp. Curso ao vivo 1x por semana via Google Meet, duração de 6 meses.</p>
-  </section>
+<section>
+<h2>Contextualização</h2>
+<p>O cenário global de cibersegurança está cada vez mais complexo, com crescimento de ataques direcionados, ransomware, APTs e exploração de vulnerabilidades.</p>
 
-  <section id="investimento">
-    <h2>Investimento</h2>
-    <p>Valor: R$ 700,00</p>
-    <p>Pagamento à vista com 10% de desconto ou parcelado em até 12x no cartão.</p>
-    <a href="#contato" class="btn">Inscreva-se Agora</a>
-  </section>
+<p>A segurança ofensiva antecipa riscos, fortalece defesas e valida estratégias de mitigação.</p>
+</section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>📞 (91) 98150-3647</p>
-    <p>🌐 <a href="https://redscanacademy.com.br" target="_blank">redscanacademy.com.br</a></p>
-    <p>🔗 <a href="https://redscanacademy.mindz.com.br" target="_blank">redscanacademy.mindz.com.br</a></p>
-  </section>
+<section>
+<h2>Instrutores</h2>
 
-  <footer>
-    <p>© 2026 RedScan Academy - "Hackeie para proteger, aprenda para evoluir."</p>
-  </footer>
+<div class="card">
+<h3>Carlos Tuma</h3>
+<p>Mais de 20 anos de experiência, 36 CVEs reportadas.</p>
+<p>Especialista em Red Team e Pentest.</p>
+<p>CEO da RedScan Academy.</p>
+</div>
+
+<div class="card">
+<h3>Smith Braz</h3>
+<p>Militar desde 1998 - Esquadrão de Guerra Cibernética.</p>
+<p>Red Team Tech Lead / Operations Manager.</p>
+<p>Certificações: OSCP, OSCP+, OSEP (in progress), DCPT, eJPT e outras.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Conteúdo Programático</h2>
+
+<p>O curso possui 25 aulas cobrindo:</p>
+
+<ul>
+<li>Virtualização e Laboratório Prático</li>
+<li>Docker e Containers</li>
+<li>Nmap, Metasploit, Exploração Linux e Windows</li>
+<li>OWASP Top 10</li>
+<li>Fuzzing</li>
+<li>SQL Injection, XSS, Command Injection</li>
+<li>Escalação de Privilégio Linux e Windows</li>
+<li>Active Directory</li>
+<li>Engenharia Social</li>
+<li>OSINT</li>
+<li>Análise com OpenVAS</li>
+<li>CTF exclusivo da turma</li>
+<li>Provas práticas com elaboração de relatório</li>
+</ul>
+
+<p><strong>Total:</strong> 25 aulas + 2 provas + CTF exclusivo.</p>
+
+</section>
+
+<section>
+<h2>Investimento</h2>
+
+<p><span class="highlight">R$ 700,00</span></p>
+<p>10% de desconto via PIX</p>
+<p>Parcelado em até 12x no cartão</p>
+
+<a href="https://redscanacademy.mindz.com.br/ead/enroll/curso-para-red-team/">
+<button>Realizar Inscrição</button>
+</a>
+
+</section>
+
+<section>
+<h2>Conclusão</h2>
+
+<p>Com mais de 200 profissionais formados, impacto internacional e ações sociais que democratizam o acesso à formação, a RedScan Academy se consolida como referência em capacitação ofensiva.</p>
+
+</section>
+
+<footer>
+
+<p><strong>Contato:</strong></p>
+<p>
+<a href="http://wa.me/5591981503647">WhatsApp</a> |
+<a href="http://redscanacademy.com.br/">Site Oficial</a> |
+<a href="http://redscanacademy.mindz.com.br/">Plataforma</a>
+</p>
+
+<p style="margin-top:20px; color:#666;">© 2026 RedScan Academy - 0ff3ns!v3 S3cur!ty</p>
+
+</footer>
+
 </body>
 </html>
